@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WINX</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+      window.addEventListener("load", function() {
+          val = localStorage.getItem("inputvalue");
+          localStorage.removeItem("inputvalue");
+          document.getElementById("lb").innerHTML = val;
+          
+      })
+
+      window.addEventListener("unload", function() {
+                localStorage.setItem("inputvalue", document.getElementById("lb").value);})
+
+  </script>
+
+  </head>
+  <body>
+    <header><div class="logo">WINX</div></header>
+    <nav id = "nav" >
+      <div><a href = "index.html">Главная</a></div>
+      <div><a>Феи</a>
+      <ul class = "second">
+        <li><a href = "gallery.html#bloom">Блум</a></li>
+        <li><a href = "gallery.html#stella">Стелла</a></li>
+        <li><a href = "gallery.html#muza">Муза</a></li>
+      </ul>
+    </div>
+    <div><a href = "форма.html">Купить куклу</a></div>
+</nav>
+<main id="lb"></main>
+    
+    
+      <div class="footer"><div class="footertext">Создатели: Ибрагимова Камила, Корнеева Наталья</div></div>
+    
+  </body>
+</html>

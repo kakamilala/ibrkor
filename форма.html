@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WINX</title>
+    <link rel="stylesheet" href="style.css">
+<script>
+
+        
+        function Complete()
+        {
+            var Elem="<p>Заказ<p><p>Фио: " + document.Sel1.surname.value + "</p>" +
+		"\n<p>Адрес получателя: " + document.Sel1.adress.value + "</p>" +
+		"\n<p>Количество: " + document.Sel1.Количество.value + "</p>" +
+		"\n<p>Имя феи: " + document.Sel1.Имяфеи.value;
+		localStorage.setItem("inputvalue", Elem);
+		document.location.href="formdata.html";
+        }
+        
+    </script>
+  </head>
+  <body>
+    <header><div class="logo">WINX</div></header>
+	
+	<nav id = "nav" >
+        <div><a href = "index.html">Главная</a></div>
+        <div><a>Феи</a>
+        <ul class = "second">
+			<li><a href = "gallery.html#bloom">Блум</a></li>
+			<li><a href = "gallery.html#stella">Стелла</a></li>
+			<li><a href = "gallery.html#muza">Муза</a></li>
+        </ul>
+      </div>
+      <div><a href = "форма.html">Купить куклу</a></div>
+</nav>
+
+<div class="main">
+<h2  id="main">Купить куклу</h2>
+<form method="post" action="gallery.html" name="Sel1" id="myForm">
+
+<div class="field"><p>Фио </p><input name="surname" type="text" class="input" style="width: 50%"></div>
+
+<div class="field"><p>Адрес получателя </p><input name="adress" type="text" class="input" style="width: 70%"></div>
+
+<div class="field"><p>Количество </p><select class="input" name="Количество" style="width: 5%">
+	      <option selected>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option></select></div>
+
+<div class="field"><p>Имя феи</p><select class="input" name="Имяфеи" style="width: 20%">
+	      <option></option>
+	      <option>Блум</option>
+	      <option>Стелла</option>
+	      <option>Текна</option>
+	      <option>Муза</option></select></div>
+
+<div class="field"><p>Доставка </p><input name="Доставка" type="radio" value="Курьером">Курьером
+	    			   <input name="Доставка" type="radio" value="Самовывоз">Самовывоз</div>
+
+<div class="button"><input class="input" name="Заказать" type="button" value="Заказать" onClick="Complete();" style="width: 20%; margin: 10px;"></div>
+</form>
+
+    
+    
+    
+      <div class="footer"><div class="footertext">Создатели: Ибрагимова Камила, Корнеева Наталья</div></div>
+    
+  </body>
+</html>
