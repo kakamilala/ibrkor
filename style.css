@@ -1,0 +1,120 @@
+body{
+        background : #fff0f5;
+	padding: 0;
+	margin: 0;
+}
+header{
+	background: #ffc3ea;
+	margin: 0;
+        margin-bottom: 0;
+}
+.logo{
+        font-family : Snell Roundhand, cursive;
+        font-size : 200px;
+        font-style : initial;
+	font-weight: 400;
+        text-align : center;
+        color : #9400D3;
+}
+main{
+        margin : 10px 10% 10px 10%;
+	padding : 5%;
+        background: #ffe1f5;
+        }
+
+.footer{
+        text-align : center;
+        }
+
+#nav{
+        padding : 10px 5% 10px 5%;
+	margin: 0;
+	background: #ffe1f5;
+        }
+.index_img {
+        width : 50%;
+        float : left;
+	margin-right : 5% ;
+}
+.gallery_img{
+	width : 50%;
+        margin: 0 25% 0 25%;
+}
+.main_text{
+	font-family : Snell Roundhand, cursive;
+        font-size : 50px;
+        font-style : initial;
+        color : #9400D3;
+        text-align: center;
+	}
+.main, #nav, .footer, .fei{
+	font-family : Snell Roundhand, cursive;
+        font-size : 30px;
+        font-style : initial;
+        text-align : center;
+}
+.main{
+        text-align: justify;;
+}
+.fei{
+        margin: 2%;
+}
+form, h2{
+        margin-left: 10%;
+}
+.field{
+        margin: 0;
+        padding: 0;
+}
+	
+	
+nav div{
+        display: inline-block;
+        width: 30%;
+        position: relative;
+        margin:0;
+        padding:0;
+}
+nav div ul{
+        display: none;
+}
+#nav div a{
+        display: block;
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
+}
+#nav div a:hover{
+        background: #ffc3ea;
+}
+#nav div .second{
+        display: none;
+        position: absolute;
+        width: 100%;
+        background: #ffc3ea;
+        margin: 0;
+        padding: 0;
+}
+#nav div:hover .second{
+        display: block;
+}
+#nav div ul li{
+        list-style: none;
+}
+#nav div ul li a:hover{
+        background-color: #ffade2;
+}
+#lb{
+        font-family : Snell Roundhand, cursive;
+        font-size : 30px;
+        font-style : initial;
+        color : #9400D3;
+        text-align: center;
+}
+.input{
+        height: 55px;
+        font-size: 40px;
+        background-color: #ffe1f5;
+        border-color: #ffc3ea;
+        padding: 5px;
+}
